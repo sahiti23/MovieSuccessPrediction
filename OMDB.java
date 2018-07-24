@@ -19,14 +19,14 @@ import java.net.*;
 public class OMDB {
 	public static void main(String args[]){
 		try {
-			BufferedReader br=new BufferedReader(new FileReader("C:/Users/AnilKumar/Desktop/DSTitles.txt"));
-	            PrintWriter pw1=new PrintWriter("C:/Users/AnilKumar/Desktop/movie_details.txt");
+			BufferedReader br=new BufferedReader(new FileReader("C:/Users/sahiti/Desktop/DSTitles.txt"));
+	            PrintWriter pw1=new PrintWriter("C:/Users/sahiti/Desktop/movie_details.txt");
 	            ConfigurationBuilder cb = new ConfigurationBuilder();
 	   		 cb.setDebugEnabled(true)
-	   		 .setOAuthConsumerKey("x1gzckhkrOpL8sNDIJKTL45VU")
-	   		 .setOAuthConsumerSecret("djywJs98ovzAdejM0KyphCHdkGpvf4kDebG5ZBS87KrHilHFct")
-	   		 .setOAuthAccessToken("826132951582674945-CVsxGBqesX6Fy04QI9cVHzvuVfIbsTK")
-	   		 .setOAuthAccessTokenSecret("sPlerbMPLN1R4Rj1fBeT1nivfvHHVmMl0L72qJjtvx0fC");
+	   		 .setOAuthConsumerKey("consumer key value type here")
+	   		 .setOAuthConsumerSecret("type here")
+	   		 .setOAuthAccessToken("type access token here")
+	   		 .setOAuthAccessTokenSecret("type here");
 	   		    cb.setJSONStoreEnabled(true);
 
 	   		    Twitter twitter = new TwitterFactory(cb.build()).getInstance();
